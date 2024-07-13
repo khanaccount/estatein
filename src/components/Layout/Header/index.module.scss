@@ -1,0 +1,75 @@
+@import "styles/variables.scss";
+.header {
+  background-color: $greyColor-10;
+  .bannerBg {
+    display: flex;
+    align-items: center;
+    height: 63px;
+    background: no-repeat url("assets/vectors/nav/navBg.svg");
+    border-bottom: 1px solid $greyColor-15;
+  }
+  .text {
+    display: flex;
+    a {
+      padding-left: 10px;
+    }
+  }
+  .closeBannerBtn {
+    cursor: pointer;
+    margin-right: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 75px;
+    display: flex;
+    padding: 10px;
+
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .navBorder {
+    border-bottom: 1px solid $greyColor-15;
+  }
+  .nav {
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    img {
+      width: 160px;
+      height: 48px;
+    }
+  }
+  .pageLists {
+    .navBtn,
+    .navBtnActive {
+      cursor: pointer;
+      padding: 14px 24px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+    }
+    .navBtnActive {
+      background-color: $greyColor-08;
+      border: 1px solid $greyColor-15;
+    }
+    .navBtn,
+    .navBtnActive:not(:last-child) {
+      margin-right: 30px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .contactUs {
+    button {
+      background-color: $greyColor-08;
+      cursor: pointer;
+      padding: 14px 24px;
+      border-radius: 10px;
+      border: 1px solid $greyColor-15;
+    }
+  }
+}

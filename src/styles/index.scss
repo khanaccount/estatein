@@ -1,0 +1,36 @@
+@import "./normalize.scss";
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400..700&display=swap");
+
+* {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  color: $absoluteColorWhite;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 150%;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+}
+
+.container {
+  max-width: 1596px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
