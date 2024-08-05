@@ -44,6 +44,9 @@
     }
   }
   .pageLists {
+    gap: 30px;
+    display: flex;
+    align-items: center;
     .navBtn,
     .navBtnActive {
       cursor: pointer;
@@ -51,25 +54,27 @@
       border-radius: 10px;
       border: 1px solid transparent;
     }
+
+    a {
+      text-decoration: none;
+    }
     .navBtnActive {
       background-color: $greyColor-08;
       border: 1px solid $greyColor-15;
     }
-    .navBtn,
-    .navBtnActive:not(:last-child) {
-      margin-right: 30px;
-    }
-    a {
-      text-decoration: none;
-    }
   }
+
   .contactUs {
     button {
       background-color: $greyColor-08;
       cursor: pointer;
-      padding: 14px 24px;
       border-radius: 10px;
       border: 1px solid $greyColor-15;
+      a {
+        display: flex;
+        padding: 14px 24px;
+        text-decoration: none;
+      }
     }
   }
 }

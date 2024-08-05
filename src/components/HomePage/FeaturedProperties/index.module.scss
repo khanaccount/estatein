@@ -1,0 +1,159 @@
+@import "styles/variables.scss";
+
+.featuredProperties {
+  margin-top: 110px;
+}
+
+.info {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 80px;
+  .infoTitle {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    p {
+      width: 1200px;
+      color: $greyColor-60;
+    }
+    button {
+      font-size: 18px;
+      font-weight: 500;
+      border: 1px solid $greyColor-15;
+      border-radius: 10px;
+      a {
+        display: flex;
+        text-decoration: none;
+        padding: 18px 24px;
+      }
+    }
+  }
+}
+
+.carousel {
+  border-bottom: 1px solid $greyColor-15;
+  padding-bottom: 50px;
+  .cards {
+    display: flex;
+    gap: 21px;
+  }
+  .card {
+    border: 1px solid $greyColor-15;
+    border-radius: 12px;
+    padding: 39px;
+    img {
+      border-radius: 10px;
+      width: 432px;
+      height: 318px;
+    }
+    h3 {
+      margin-top: 30px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .description {
+      margin-top: 10px;
+      color: $greyColor-60;
+      font-size: 18px;
+      font-weight: 500;
+      a {
+        margin-left: 5px;
+        color: $absoluteColorWhite;
+        text-decoration: underline;
+      }
+    }
+
+    .details {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      padding-right: 25px;
+      .items {
+        display: flex;
+        align-items: center;
+        background-color: $greyColor-10;
+        border: 1px solid $greyColor-15;
+        border-radius: 28px;
+        padding: 8px 14px;
+        .detailsText {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        img {
+          margin-right: 4px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .selling {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px;
+      align-items: center;
+
+      .text {
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $greyColor-60;
+      }
+      .value {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      button {
+        background-color: $primaryColor-60;
+        cursor: pointer;
+        padding: 18px 54.5px;
+        border-radius: 10px;
+        border: 1px solid #262626;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 110px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  .arrows {
+    display: flex;
+    gap: 10px;
+  }
+  .customNext,
+  .customPrev {
+    width: 58px;
+    height: 58px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    border: 1px solid $greyColor-15;
+  }
+  .customPrev {
+    transform: rotate(180deg);
+  }
+  .customPagination {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .currentPaginationValue {
+    color: $greyColor-60;
+  }
+}

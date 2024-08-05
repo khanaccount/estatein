@@ -3,6 +3,9 @@ import s from "./index.module.scss";
 
 import navCross from "assets/vectors/nav/navCross.svg";
 import logo from "assets/vectors/logo.svg";
+import { NavLink } from "react-router-dom";
+
+const setActive = ({ isActive }: { isActive: boolean }) => (isActive ? s.navBtnActive : s.navBtn);
 
 export const Header: React.FC = () => {
   return (
@@ -26,21 +29,26 @@ export const Header: React.FC = () => {
             </a>
           </div>
           <div className={s.pageLists}>
-            <button className={s.navBtnActive}>
-              <a href="">Home</a>
-            </button>
-            <button className={s.navBtn}>
-              <a href="">About Us</a>
-            </button>
-            <button className={s.navBtn}>
-              <a href="">Properties</a>
-            </button>
-            <button className={s.navBtn}>
-              <a href="">Services</a>
-            </button>
+            <NavLink className={setActive} to="/">
+              Home
+            </NavLink>
+
+            <NavLink className={setActive} to="/aboutus">
+              About Us
+            </NavLink>
+
+            <NavLink className={setActive} to="/properties">
+              Properties
+            </NavLink>
+
+            <NavLink className={setActive} to="/services">
+              Services
+            </NavLink>
           </div>
           <div className={s.contactUs}>
-            <button>Contact Us</button>
+            <button>
+              <a href="#">Contact Us</a>
+            </button>
           </div>
         </div>
       </nav>

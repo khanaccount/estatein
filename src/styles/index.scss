@@ -9,6 +9,7 @@
   font-size: 18px;
   font-weight: 500;
   color: $absoluteColorWhite;
+  background-color: $greyColor-08;
 }
 
 html,
@@ -26,11 +27,17 @@ body {
 
 .main {
   flex: 1;
-  display: flex;
 }
 
 .container {
   max-width: 1596px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+.currentPaginationValue {
+  color: $greyColor-60;
 }
